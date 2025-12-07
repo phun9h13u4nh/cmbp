@@ -263,7 +263,7 @@ function get_time_format() {
     });
 }
 function import_user_ads() {
-    var premium_level = getSafe(() => my_profile.info.premium.level, 0);
+    var premium_level = 1;
     if (premium_level == 0) {
         $('.pr_module.import_ads').each(function () {
             if($(this).html() == ''){
